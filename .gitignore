@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==============================================================================
+# REGLAS DE SEGURIDAD Y BIG DATA DEL PROYECTO
+# ==============================================================================
+
+# 1. Credenciales de Google Cloud (GCP) y contraseñas
+# NUNCA subas el JSON de tu Service Account a GitHub, te pueden hackear la cuenta
+*credentials*.json
+*service-account*.json
+*gcp-key*.json
+keys/
+secrets/
+
+# 2. Ignorar datos locales (Arquitectura Big Data en GCP)
+# Evita subir carpetas pesadas de tu ETL
+data/bronce/*
+data/plata/*
+data/oro/*
+
+!data/README.md
+
+# 3. Archivos pesados (Parquet, CSVs gigantes, Zips)
+*.csv
+*.parquet
+*.json
+*.gpkg
+*.shp
