@@ -1,4 +1,4 @@
-# 🌽 Food Price Forecasting Perú
+# Food Price Forecasting Perú
 ### Sistema de Alerta Temprana de Inflación de Alimentos Básicos en Mercados de Lima
 
 Este repositorio contiene el pipeline de Big Data y Machine Learning desarrollado como Proyecto Final del curso de **Big Data Analytics (UNMSM)**. El sistema anticipa la volatilidad de precios mayoristas con dos semanas de anticipación integrando múltiples fuentes de datos estructurados y no estructurados.
@@ -6,16 +6,16 @@ Este repositorio contiene el pipeline de Big Data y Machine Learning desarrollad
 
 ---
 
-## 🏗️ Arquitectura del Data Lake (Medallion en GCP)
+## Arquitectura del Data Lake (Medallion en GCP)
 El proyecto utiliza **Google Cloud Storage** como repositorio central, procesado de forma distribuida mediante **Apache Spark (PySpark)**:
 
-* **🥉 Zona Bronce (Raw):** Ingesta cruda de SISAP-MIDAGRI (Precios), SENAMHI (Clima), SUNAT (Importaciones), INEI (Shapefiles) y Twitter (Scraping vía `twscrape`).
-* **🥈 Zona Plata (Cleaned):** Limpieza, joins espaciales (GeoPandas) y temporales, cálculo de lags y Análisis de Sentimiento (VADER). Almacenado en formato Parquet.
-* **🥇 Zona Oro (Aggregated):** Tablas de negocio estructuradas con KPIs (`kpi_precios`, `kpi_sentimiento` y `clusters_productos`) listas para alimentar el Dashboard.
+* ** Zona Bronce (Raw):** Ingesta cruda de SISAP-MIDAGRI (Precios), SENAMHI (Clima), SUNAT (Importaciones), INEI (Shapefiles) y Twitter (Scraping vía `twscrape`).
+* ** Zona Plata (Cleaned):** Limpieza, joins espaciales (GeoPandas) y temporales, cálculo de lags y Análisis de Sentimiento (VADER). Almacenado en formato Parquet.
+* ** Zona Oro (Aggregated):** Tablas de negocio estructuradas con KPIs (`kpi_precios`, `kpi_sentimiento` y `clusters_productos`) listas para alimentar el Dashboard.
 
 ---
 
-## 🧠 Modelos de Machine Learning (MLflow)
+## Modelos de Machine Learning (MLflow)
 Todos los experimentos y artefactos fueron auditados y registrados usando **MLflow**:
 
 1. **Forecasting (Regresión):** Gradient Boosted Trees (GBT) para predecir el precio exacto a 2 semanas.
@@ -24,7 +24,7 @@ Todos los experimentos y artefactos fueron auditados y registrados usando **MLfl
 
 ---
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```text
 .
