@@ -54,3 +54,10 @@ Los experimentos han sido auditados bajo el ciclo de vida de MLflow:
 ├── scripts/           # Scripts de recolección automatizada (.py)
 ├── .gitignore         # Configuración de seguridad (credentials, .csv, .parquet, etc.)
 └── README.md          # Documentación principal
+
+---
+
+## Notas sobre Reproducibilidad y Entorno Cloud
+
+* **Datos y Entorno Cloud:** Los datasets pesados (Zonas Bronce, Plata y Oro) están declarados en el `.gitignore` por buenas prácticas. Todo el pipeline se ejecutó originalmente sobre **Google Cloud Platform (GCP)**. Este entorno cloud y sus buckets de almacenamiento **han sido desactivados tras la entrega** para evitar sobrecostos operativos.
+* **Evidencia:** Toda la trazabilidad de los experimentos, métricas y artefactos se encuentra respaldada en el reporte final PDF y en la carpeta de MLflow.
