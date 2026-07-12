@@ -36,8 +36,13 @@ Todos los experimentos y artefactos fueron auditados y registrados usando **MLfl
 ├── .gitignore         # Reglas de seguridad para credenciales GCP y Big Data
 └── README.md          # Documentación principal
 
-```
-## Dashboard en vivo
-```text
+#
+
+##  Dashboard en vivo
 Puedes visualizar el dashboard interactivo aquí:
 [https://food-price-forecasting-peru.streamlit.app/](https://food-price-forecasting-peru-olfdb5ejpdckasaxwkrrgq.streamlit.app/)
+
+## Tecnologías utilizadas
+* Python (Pandas, Streamlit)
+* Modelos: ARIMA y LSTM
+* Visualización: Dashboards en la nube
