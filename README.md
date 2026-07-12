@@ -1,7 +1,7 @@
 # Food Price Forecasting Perú
 ### Sistema de Alerta Temprana de Inflación de Alimentos Básicos en Mercados de Lima
 
-Proyecto desarrollado como trabajo final para el curso de **Big Data (UNMSM)**. El sistema anticipa la volatilidad de precios mayoristas con dos semanas de antelación, integrando múltiples fuentes de datos estructurados y no estructurados (SISAP, SENAMHI, SUNAT y Twitter) mediante una arquitectura Big Data.
+Proyecto desarrollado como trabajo final para el curso de **Big Data Analytics (UNMSM)**. El sistema anticipa la volatilidad de precios mayoristas con dos semanas de antelación, integrando múltiples fuentes de datos estructurados y no estructurados (SISAP, SENAMHI, SUNAT y Twitter) mediante una arquitectura Big Data.
 
 ---
 
