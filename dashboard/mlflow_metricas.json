@@ -1,0 +1,26 @@
+{
+  "modelo1_forecasting": {
+    "descripcion": "Modelo 1 - Forecasting de precios (regresion)",
+    "runs": [
+      {"run_name": "LR_Baseline", "algoritmo": "LinearRegression", "RMSE": 1.0169, "R2": 0.8591, "MAE": 0.3472, "es_mejor": true},
+      {"run_name": "RF_RandomizedSearch", "algoritmo": "RandomForest", "RMSE": 1.2471, "R2": 0.7881, "MAE": 0.3982, "es_mejor": false},
+      {"run_name": "RF_RandomizedSearch", "algoritmo": "RandomForest", "RMSE": 1.2527, "R2": 0.7862, "MAE": 0.4108, "es_mejor": false},
+      {"run_name": "XGB_RandomizedSearch", "algoritmo": "XGBoost", "RMSE": 1.2363, "R2": 0.7918, "MAE": 0.3962, "es_mejor": false}
+    ]
+  },
+  "modelo3_clasificacion": {
+    "descripcion": "Modelo 3 - Clasificacion de alerta de precio (sube mas de 10%)",
+    "runs": [
+      {"run_name": "GBTClassifier", "algoritmo": "GBTClassifier", "AUC_ROC": 0.6707, "F1": 0.6883, "es_mejor": true},
+      {"run_name": "RF_Corregido_Depth6", "algoritmo": "RandomForest", "AUC_ROC": 0.6651, "F1": 0.6628, "es_mejor": false},
+      {"run_name": "LogisticRegression_Baseline", "algoritmo": "LogisticRegression", "AUC_ROC": 0.6324, "F1": 0.5811, "es_mejor": false}
+    ]
+  },
+  "fuentes_datos": [
+    {"fuente": "SISAP-MIDAGRI (precios mayoristas)", "estado": "OK", "descripcion": "Alimenta kpi_precios"},
+    {"fuente": "SENAMHI (clima zonas productoras)", "estado": "OK", "descripcion": "Feature de features de clima en Modelo 1 y 3"},
+    {"fuente": "SUNAT (importaciones)", "estado": "OK", "descripcion": "Feature de presion externa en Modelo 1 y 3"},
+    {"fuente": "Twitter / X (sentimiento)", "estado": "OK", "descripcion": "Alimenta kpi_sentimiento"},
+    {"fuente": "INEI (shapefiles distritos)", "estado": "OK", "descripcion": "Join espacial mercados-distrito"}
+  ]
+}
