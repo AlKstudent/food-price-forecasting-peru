@@ -35,3 +35,9 @@ Todos los experimentos y artefactos fueron auditados y registrados usando **MLfl
 ├── scripts/           # Scripts de recolección automatizada (.py)
 ├── .gitignore         # Reglas de seguridad para credenciales GCP y Big Data
 └── README.md          # Documentación principal
+
+```
+## Dashboard en vivo
+```text
+Puedes visualizar el dashboard interactivo aquí:
+[https://food-price-forecasting-peru.streamlit.app/](https://food-price-forecasting-peru-olfdb5ejpdckasaxwkrrgq.streamlit.app/)
