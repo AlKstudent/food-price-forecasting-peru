@@ -12,7 +12,7 @@ Proyecto desarrollado como trabajo final para el curso de **Big Data (UNMSM)**. 
 
 ---
 
-## Integrantes y Participación (Grupo 08)
+## Integrantes y Participación (Grupo 5)
 
 Todos los miembros participaron activamente en el diseño, desarrollo e implementación de la arquitectura de datos y modelado.
 
