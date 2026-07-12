@@ -54,6 +54,7 @@ Los experimentos han sido auditados bajo el ciclo de vida de MLflow:
 ├── scripts/           # Scripts de recolección automatizada (.py)
 ├── .gitignore         # Configuración de seguridad (credentials, .csv, .parquet, etc.)
 └── README.md          # Documentación principal
+```
 
 ---
 
