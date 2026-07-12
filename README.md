@@ -5,13 +5,13 @@ Proyecto desarrollado como trabajo final para el curso de **Big Data Analytics (
 
 ---
 
-## 📊 Dashboard en vivo
+## Dashboard en vivo
 Puedes visualizar el dashboard interactivo desplegado en la nube aquí:
 [**Dashboard: Alerta de Precios de Alimentos - Lima**](https://food-price-forecasting-peru-olfdb5ejpdckasaxwkrrgq.streamlit.app/)
 
 ---
 
-## 🏗️ Arquitectura del Data Lake (Medallion en GCP)
+## Arquitectura del Data Lake (Medallion en GCP)
 El procesamiento se realiza de forma distribuida utilizando **Apache Spark (PySpark)** sobre **Google Cloud Storage**:
 
 * **Zona Bronce (Raw):** Ingesta cruda de SISAP-MIDAGRI, SENAMHI, SUNAT, INEI y Twitter (vía `twscrape`).
@@ -20,7 +20,7 @@ El procesamiento se realiza de forma distribuida utilizando **Apache Spark (PySp
 
 ---
 
-## 🤖 Modelos de Machine Learning (MLflow)
+## Modelos de Machine Learning (MLflow)
 Los experimentos han sido auditados bajo el ciclo de vida de MLflow:
 
 1.  **Forecasting:** Modelos ARIMA y LSTM para la predicción de precios a 2 semanas.
@@ -29,7 +29,7 @@ Los experimentos han sido auditados bajo el ciclo de vida de MLflow:
 
 ---
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```text
 .
