@@ -12,7 +12,7 @@ Proyecto desarrollado como trabajo final para el curso de **Big Data (UNMSM)**. 
 
 ---
 
-## 👥 Integrantes y Participación (Grupo 08)
+## Integrantes y Participación (Grupo 08)
 
 Todos los miembros participaron activamente en el diseño, desarrollo e implementación de la arquitectura de datos y modelado.
 
@@ -37,9 +37,9 @@ El procesamiento se realiza de forma distribuida utilizando **Apache Spark (PySp
 
 Los experimentos han sido auditados bajo el ciclo de vida de MLflow:
 
-1. **Forecasting:** Modelos ARIMA y LSTM para la predicción de precios a 2 semanas.
-2. **Segmentación:** Algoritmo KMeans para agrupar productos por perfiles de volatilidad.
-3. **Clasificación:** Random Forest para detección de alertas de subida (>10%).
+1. **Forecasting:** Modelos **Regresión Lineal**, **Random Forest** y **XGBoost** para la predicción de precios a 2 semanas.
+2. **Segmentación:** Algoritmos **KMeans** y **Agglomerative Clustering** (Jerárquico) para agrupar productos por perfiles de volatilidad.
+3. **Clasificación:** Modelos **Random Forest**, **GBT Classifier** y **Regresión Logística** para detección de alertas de subida (>10%).
 
 ---
 
